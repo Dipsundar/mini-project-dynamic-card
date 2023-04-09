@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
+.posts {
+    width: 100%;
+    /* background-color: aquamarine; */
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post {
+    background-color: rgb(255, 246, 234);
+    width: 30%;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 1rem;
+    transition: all 0.4s;
+}
+
+.post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 992px) {
+    .post {
+        width: 78%;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .post {
+        width: 99%;
+        text-align: center;
+        background-color: azure;
+    }
+}
